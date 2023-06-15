@@ -1,0 +1,8 @@
+@using System.Globalization
+@model WeatherInstance
+
+<li>
+    <span>@Model.City</span>
+    <span>@(Model.Temperature.ToString("#.0", CultureInfo.InvariantCulture))&deg;C</span>
+    <span>@Model.Weather</span>
+</li>

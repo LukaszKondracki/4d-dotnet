@@ -1,0 +1,25 @@
+@using System.Globalization
+@model WeatherModel
+
+@{
+    ViewData["Title"] = "Weather";
+}
+
+<main>
+    <h1>Pogoda</h1>
+    <h2>Czas pomiaru <strong>@Model.MeasurementTime</strong></h2>
+
+    <ul>
+        @foreach(var i in Model.Instances) {
+            <partial name="_WeatherInstance" model="i"></partial>
+        }
+    </ul>
+
+    <form asp-controller="Weather" asp-action="Request" method="GET">
+        <label for="city">Miasto</label>
+        <input type="text" id="city" name="city">
+
+        <input type="submit" value="Pokaż pogodę">
+    </form>
+
+</main>

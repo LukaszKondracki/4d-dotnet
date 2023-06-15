@@ -1,0 +1,20 @@
+@using System.Globalization;
+@model WeatherRequestModel
+
+@{
+    ViewData["Title"] = "Weather";
+}
+
+<main>
+    <h1>@Model.City</h1>
+
+    <ul>
+        @foreach(var i in @Model.Instances) {
+            <li>
+                <span>@i.Day</span>
+                <span>@i.Temperature.ToString("#.0", CultureInfo.InvariantCulture)&deg;C</span>
+                <span>@i.Weather</span>
+            </li>
+        }
+    </ul>
+</main>

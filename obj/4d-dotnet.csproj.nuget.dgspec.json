@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/4d-dotnet/4d-dotnet.csproj": {}
+    "C:\\Users\\user_2\\Desktop\\Kondracki\\4d-dotnet\\4d-dotnet.csproj": {}
   },
   "projects": {
-    "/workspaces/4d-dotnet/4d-dotnet.csproj": {
+    "C:\\Users\\user_2\\Desktop\\Kondracki\\4d-dotnet\\4d-dotnet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/4d-dotnet/4d-dotnet.csproj",
+        "projectUniqueName": "C:\\Users\\user_2\\Desktop\\Kondracki\\4d-dotnet\\4d-dotnet.csproj",
         "projectName": "4d-dotnet",
-        "projectPath": "/workspaces/4d-dotnet/4d-dotnet.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/4d-dotnet/obj/",
+        "projectPath": "C:\\Users\\user_2\\Desktop\\Kondracki\\4d-dotnet\\4d-dotnet.csproj",
+        "packagesPath": "C:\\Users\\user_2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user_2\\Desktop\\Kondracki\\4d-dotnet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\user_2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/dotnet/7.0.302/sdk/7.0.302/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.302/sdk/7.0.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
